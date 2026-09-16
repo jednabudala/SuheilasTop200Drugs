@@ -1014,3 +1014,44 @@ line-height: 1.5;
 margin: 6px 0 0;
 line-height: 1.5;
 }
+.drug-card {
+height: 430px;
+}
+
+.face.back {
+overflow: hidden;
+}
+
+.profile-scroll {
+height: 100%;
+overflow-y: auto;
+padding-right: 10px;
+}
+
+.profile-scroll::-webkit-scrollbar {
+width: 7px;
+}
+
+.profile-scroll::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0.12);
+border-radius: 999px;
+}
+
+.profile-scroll::-webkit-scrollbar-thumb {
+background: #a7e8bd;
+border-radius: 999px;
+}
+
+.dashboard {
+align-items: start;
+}
+
+.side {
+align-self: start;
+}
+
+.stage-smiski {
+bottom: 18px;
+left: 18px;
+pointer-events: none;
+}
