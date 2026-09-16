@@ -981,4 +981,6 @@ body {
     padding: 9px 13px;
     font-size: 0.9rem;
   }
+}.type-actions {
+  justify-content: flex-start;
 }
