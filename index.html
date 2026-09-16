@@ -74,25 +74,92 @@ Drug list
 <!-- FLASHCARDS -->
 
 <section id="flash" class="panel active">
-
 <div class="dashboard">
 
 <div class="stage">
-
-<div class="eyebrow" id="counter">
-Card 1 of 200
-</div>
+<div class="eyebrow" id="counter">Card 1 of 200</div>
 
 <div class="card-wrap">
+<div class="drug-card" id="drugCard" tabindex="0" role="button" aria-label="Flip flashcard">
 
-<div
-class="drug-card"
-id="drugCard"
-tabindex="0"
-role="button"
-aria-label="Flip flashcard"
->
+<div class="face">
+<div class="prompt">GENERIC NAME</div>
+<div class="answer" id="frontText"></div>
+<span class="class-tag" id="frontClass"></span>
+</div>
 
+<div class="face back">
+<div class="profile-scroll">
+<div class="prompt">BRAND NAME</div>
+<div class="answer" id="backText"></div>
+
+<div class="detail-grid">
+<div class="detail-block">
+<span class="detail-label">Class</span>
+<span class="class-tag" id="backClass"></span>
+</div>
+
+<div class="detail-block">
+<span class="detail-label">Mechanism of action</span>
+<span class="detail-text" id="mechanismText"></span>
+</div>
+
+<div class="detail-block">
+<span class="detail-label">Indications</span>
+<span class="detail-text" id="indicationText"></span>
+</div>
+
+<div class="detail-block">
+<span class="detail-label">Adverse effects</span>
+<span class="detail-text" id="adverseText"></span>
+</div>
+</div>
+
+<p class="important-note" id="importantText"></p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="actions">
+<button class="btn bad" id="again">Review again</button>
+<button class="btn alt" id="flip">Flip card</button>
+<button class="btn good" id="know">Got it</button>
+</div>
+
+<div class="kbd">Space to flip · ← review · → got it</div>
+
+<img class="corner-smiski stage-smiski" src="assets/smiskis/cheer.png" alt="" aria-hidden="true">
+</div>
+
+<aside class="side">
+<h2>Progress</h2>
+
+<div class="stat">
+<span>Mastered</span>
+<strong id="masteredCount">0/200</strong>
+</div>
+
+<div class="bar">
+<span id="masterBar"></span>
+</div>
+
+<div class="stat">
+<span>Studied today</span>
+<strong id="todayCount">0</strong>
+</div>
+
+<div class="stat">
+<span>Favorites</span>
+<strong id="favCount">0</strong>
+</div>
+
+<img class="side-smiski" src="assets/smiskis/meditating.png" alt="Meditating Smiski">
+</aside>
+
+</div>
+</section>
 <!-- FRONT OF CARD -->
 
 <div class="face">
