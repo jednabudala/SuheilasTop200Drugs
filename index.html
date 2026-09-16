@@ -3,20 +3,13 @@
 
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Suheilas Top 200 Drugs Mastersheet</title>
 
-<meta
-name="description"
-content="The Nitty files"
->
+<meta name="description" content="The unofficial Nitty files — a study guide for the top 200 commonly studied pharmacy drugs.">
 
-<link
-rel="icon"
-type="image/svg+xml"
-href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2303261a'/%3E%3Cg transform='rotate(-38 32 32)'%3E%3Crect x='12' y='23' width='40' height='18' rx='9' fill='%23ffd1e0' stroke='%23fff0f5' stroke-width='2'/%3E%3Cpath d='M32 23v18' stroke='%23e99bb8' stroke-width='2'/%3E%3Cpath d='M21 27c-3 1-5 3-5 6' fill='none' stroke='%23fff8fb' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E"
->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23031a13'/%3E%3Cg transform='rotate(-38 32 32)'%3E%3Crect x='12' y='23' width='40' height='18' rx='9' fill='%23ffc4d8' stroke='%23fff0f5' stroke-width='2'/%3E%3Cpath d='M32 23v18' stroke='%23e99bb8' stroke-width='2'/%3E%3Cpath d='M21 27c-3 1-5 3-5 6' fill='none' stroke='%23fff8fb' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E">
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,22 +18,13 @@ href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 
 
 <main class="app">
 
-<!-- TITLE  -->
-
-<img
-class="title-smiski"
-src="assets/smiskis/laptop.png"
-alt=""
-aria-hidden="true"
->
-
-<!-- HEADER -->
+<img class="title-smiski" src="assets/smiskis/laptop.png" alt="" aria-hidden="true">
 
 <header class="top">
 
 <div class="brand">
 <span>Suheilas Top 200 Drugs Mastersheet</span>
-<small>“The Nitty files”</small>
+<small>“The unofficial Nitty files”</small>
 </div>
 
 <div class="progress-pill" id="topProgress">
@@ -49,91 +33,142 @@ aria-hidden="true"
 
 </header>
 
-<!-- NAVIGATION -->
-
 <nav class="tabs" aria-label="Study modes">
 
-<button class="tab active" type="button" data-panel="flash">
+<button class="tab active" data-panel="flash" type="button">
 Flashcards
 </button>
 
-<button class="tab" type="button" data-panel="match">
+<button class="tab" data-panel="match" type="button">
 Quick match
 </button>
 
-<button class="tab" type="button" data-panel="type">
+<button class="tab" data-panel="type" type="button">
 Type it
 </button>
 
-<button class="tab" type="button" data-panel="list">
+<button class="tab" data-panel="list" type="button">
 Drug list
 </button>
 
 </nav>
 
-<!-- FLASHCARDS -->
-
 <section id="flash" class="panel active">
+
 <div class="dashboard">
 
 <div class="stage">
-<div class="eyebrow" id="counter">Card 1 of 200</div>
+
+<div class="eyebrow" id="counter">
+Card 1 of 200
+</div>
 
 <div class="card-wrap">
+
 <div class="drug-card" id="drugCard" tabindex="0" role="button" aria-label="Flip flashcard">
 
 <div class="face">
-<div class="prompt">GENERIC NAME</div>
+
+<div class="prompt">
+Generic name
+</div>
+
 <div class="answer" id="frontText"></div>
+
 <span class="class-tag" id="frontClass"></span>
+
 </div>
 
 <div class="face back">
+
 <div class="profile-scroll">
-<div class="prompt">BRAND NAME</div>
+
+<div class="prompt">
+Brand name
+</div>
+
 <div class="answer" id="backText"></div>
 
 <div class="detail-grid">
+
 <div class="detail-block">
-<span class="detail-label">Class</span>
+
+<span class="detail-label">
+Class
+</span>
+
 <span class="class-tag" id="backClass"></span>
+
 </div>
 
 <div class="detail-block">
-<span class="detail-label">Mechanism of action</span>
+
+<span class="detail-label">
+Mechanism of action
+</span>
+
 <span class="detail-text" id="mechanismText"></span>
+
 </div>
 
 <div class="detail-block">
-<span class="detail-label">Indications</span>
+
+<span class="detail-label">
+Indications
+</span>
+
 <span class="detail-text" id="indicationText"></span>
+
 </div>
 
 <div class="detail-block">
-<span class="detail-label">Adverse effects</span>
+
+<span class="detail-label">
+Adverse effects
+</span>
+
 <span class="detail-text" id="adverseText"></span>
+
 </div>
+
 </div>
 
 <p class="important-note" id="importantText"></p>
-</div>
+
 </div>
 
 </div>
+
+</div>
+
 </div>
 
 <div class="actions">
-<button class="btn bad" id="again">Review again</button>
-<button class="btn alt" id="flip">Flip card</button>
-<button class="btn good" id="know">Got it</button>
+
+<button class="btn bad" id="again" type="button">
+Review again
+</button>
+
+<button class="btn alt" id="flip" type="button">
+Flip card
+</button>
+
+<button class="btn good" id="know" type="button">
+Got it
+</button>
+
 </div>
 
-<div class="kbd">Space to flip · ← review · → got it</div>
+<div class="kbd">
+Space to flip · ← review · → got it
+</div>
 
 <img class="corner-smiski stage-smiski" src="assets/smiskis/cheer.png" alt="" aria-hidden="true">
+
 </div>
 
 <aside class="side">
+
 <h2>Progress</h2>
 
 <div class="stat">
@@ -156,317 +191,9 @@ Drug list
 </div>
 
 <img class="side-smiski" src="assets/smiskis/meditating.png" alt="Meditating Smiski">
-</aside>
-
-</div>
-</section>
-<!-- FRONT OF CARD -->
-
-<div class="face">
-
-<div class="prompt">
-GENERIC NAME
-</div>
-
-<div class="answer" id="frontText"></div>
-
-<span class="class-tag" id="frontClass"></span>
-
-</div>
-
-<!-- BACK OF CARD -->
-
-<div class="face back">
-<div class="profile-scroll">
-<div class="prompt">BRAND NAME</div>
-<div class="answer" id="backText"></div>
-
-<div class="detail-grid">
-<div class="detail-block">
-<span class="detail-label">Class</span>
-<span class="detail-text" id="backClass"></span>
-</div>
-
-<div class="detail-block">
-<span class="detail-label">Mechanism of action</span>
-<span class="detail-text" id="mechanismText"></span>
-</div>
-
-<div class="detail-block">
-<span class="detail-label">Indications</span>
-<span class="detail-text" id="indicationText"></span>
-</div>
-
-<div class="detail-block">
-<span class="detail-label">Adverse effects</span>
-<span class="detail-text" id="adverseText"></span>
-</div>
-</div>
-
-<p class="important-note" id="importantText"></p>
-</div>
-</div>
-
-<!-- FLASHCARD BUTTONS -->
-
-<div class="actions">
-
-<button class="btn bad" id="again" type="button">
-Review again
-</button>
-
-<button class="btn alt" id="flip" type="button">
-Flip card
-</button>
-
-<button class="btn good" id="know" type="button">
-Got it
-</button>
-
-</div>
-
-<div class="kbd">
-Space to flip · ← review · → got it
-</div>
-
-<img
-class="corner-smiski stage-smiski"
-src="assets/smiskis/cheer.png"
-alt=""
-aria-hidden="true"
->
-
-</div>
-
-<!-- PROGRESS  -->
-
-<aside class="side">
-
-<h2>Progress</h2>
-
-<div class="stat">
-<span>Mastered</span>
-<strong id="masteredCount">0/200</strong>
-</div>
-
-<div class="bar">
-<span id="masterBar"></span>
-</div>
-
-<div class="stat">
-<span>Studied today</span>
-<strong id="todayCount">0</strong>
-</div>
-
-<div class="stat">
-<span>Favorites</span>
-<strong id="favCount">0</strong>
-</div>
-
-<img
-class="side-smiski"
-src="assets/smiskis/meditating.png"
-alt="Meditating Smiski"
->
-
-<span id="buddyTitle" hidden></span>
-<span id="buddyText" hidden></span>
 
 </aside>
 
 </div>
 
-</section>
-
-<!-- QUICK MATCH -->
-
-<section id="match" class="panel">
-
-<div class="stage quiz">
-
-<div class="mode-head">
-
-<div>
-<div class="eyebrow">Practice</div>
-<h1>Match brand to generic</h1>
-</div>
-
-<strong id="matchScore">
-0 correct
-</strong>
-
-</div>
-
-<div class="prompt">
-Which generic matches this brand?
-</div>
-
-<div class="quiz-q" id="matchQ"></div>
-
-<div class="choices" id="choices"></div>
-
-<div
-class="feedback"
-id="matchFeedback"
-aria-live="polite"
-></div>
-
-<button class="btn alt" id="nextMatch" type="button">
-Skip / next
-</button>
-
-</div>
-
-</section>
-
-<!-- TYPE IT -->
-
-<section id="type" class="panel">
-
-<div class="stage typing">
-
-<div class="eyebrow">
-Active recall
-</div>
-
-<div class="mode-head">
-
-<h1>Type the generic</h1>
-
-<strong id="typeScore">
-0 correct
-</strong>
-
-</div>
-
-<div class="prompt">
-Brand name
-</div>
-
-<div class="quiz-q" id="typeQ"></div>
-
-<form id="typeForm">
-
-<label class="prompt" for="typeInput">
-GENERIC NAME
-</label>
-
-<input
-class="type-input"
-id="typeInput"
-type="text"
-autocomplete="off"
-placeholder="Start typing…"
->
-
-<div
-class="feedback"
-id="typeFeedback"
-aria-live="polite"
-></div>
-
-<div class="actions type-actions">
-
-<button class="btn" type="submit">
-Check answer
-</button>
-
-<button class="btn alt" id="reveal" type="button">
-Reveal
-</button>
-
-<button class="btn alt" id="nextType" type="button">
-Next
-</button>
-
-</div>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- DRUG LIST -->
-
-<section id="list" class="panel">
-
-<div class="reference-layout">
-
-<div class="listbox">
-
-<div class="mode-head">
-
-<div>
-<div class="eyebrow">Reference</div>
-<h1>All 200 drugs</h1>
-</div>
-
-<span id="resultCount">
-200 results
-</span>
-
-</div>
-
-<div class="filters">
-
-<input
-class="search"
-id="search"
-type="search"
-placeholder="Search any drug detail…"
->
-
-<select
-class="search"
-id="classFilter"
-aria-label="Filter by drug class"
->
-
-<option value="">
-All classes
-</option>
-
-</select>
-
-</div>
-
-<div class="drug-list" id="drugList"></div>
-
-<p class="study-note">
-</p>
-
-</div>
-
-<!-- CLASS GUIDE -->
-
-<aside class="class-panel">
-
-<div class="eyebrow">
-Class guide
-</div>
-
-<h2>Mechanisms of action</h2>
-
-<input
-class="search"
-id="classSearch"
-type="search"
-placeholder="Find a drug class…"
->
-
-<div class="class-guide" id="classGuide"></div>
-
-</aside>
-
-</div>
-
-</section>
-
-</main>
-
-<script src="app.js"></script>
-
-</body>
-
-</html>
+</section
