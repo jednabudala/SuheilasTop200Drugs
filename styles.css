@@ -984,3 +984,33 @@ body {
 }.type-actions {
   justify-content: flex-start;
 }
+.important-note {
+margin-top: 18px;
+padding: 12px 14px;
+border: 1px solid rgba(255, 209, 224, 0.55);
+border-radius: 14px;
+background: #ffd9e6;
+color: #492536;
+font-size: 0.92rem;
+line-height: 1.5;
+}
+
+#backClass {
+display: inline-block;
+margin: 8px 0 16px;
+padding: 7px 14px;
+border-radius: 999px;
+color: #173c2c;
+font-size: 0.85rem;
+}
+
+.detail-text {
+display: block;
+margin-top: 5px;
+line-height: 1.5;
+}
+
+.profile-item p {
+margin: 6px 0 0;
+line-height: 1.5;
+}
